@@ -28,5 +28,47 @@
 
     <!-- iframe incrustra un pedazo de otra pagina-->
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5436.581705351543!2d-58.436697477622864!3d-34.6064540912693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1727303721032!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Tablas grilla ordenada para utilizar // border borde clasico 1-->
+    <table border="1">
+        <!--table head parte superior-->
+        <thead>
+            <!-- tabler row fila-->
+            <tr>
+                <!--table data td, th en negrita-->
+                <th>id</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <!-- colspan ancho de la columna doble-->
+                <th colspan="2">Acciones</th>
+            </tr>
+        </thead>
+        <!-- table body el contenido por lo general es estativo pero varia cuando toma datos de otro sector como una API publica debe tener las cantidades del de arriba para que coincida-->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Tev</td>
+                <td>100000</td>
+                <td><a href="#">🛒</a></td>
+                <td><a href="#">🗑️</a></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Tcd</td>
+                <td>10000</td>
+                <td><a href="#">🛒</a></td>
+                <td><a href="#">🗑️</a></td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Cpu</td>
+                <td>600000</td>
+                <td><a href="#">🛒</a></td>
+                <td><a href="#">🗑️</a></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
