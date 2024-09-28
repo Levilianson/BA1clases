@@ -1,0 +1,56 @@
+<!-- 1:19:01 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <!-- los imput estan dentro del formulario // action a donde mando esto y method este posee nombre en mayusculas -->
+    <form action="#" method="POST">
+        <!-- Identifico los datos para el back con el id o el name -->
+        <!-- label deja poner el campo de datos // el input standar es de entrada de texto-->
+        <label for="">Nombre:</label>
+        <!-- placehoder texto predictivo-->
+        <!-- metodo de captura de los datos // required es necesario no puede estar vacio// max-minlength largo y minimo de letra // patern define un patron-->
+        <input type="nombre" id="nombre" placeholder="Escriba aqui" required maxlength="15" minlength="2">
+        <br>
+        <label for="">Contraseña</label>
+        <input type="password" id="password placeholder="Escriba password" required pattern="">
+        <br>
+        <label for="">Mail:</label>
+        <input type="email" id="email" placeholder="Escriba aqui mail" required>
+        <br>
+        <!-- max y min por que es numero // readonly si lo calculo antes ya queda escrito para forzarlo value -->
+        <label for="">Edad:</label>
+        <input type="number" id="number" placeholder="Escriba aqui edad" required max="69" min="5" readonly value="33">
+
+        <label for="">Archivo:</label>
+        <input type="file" id="file" name="">
+        <br>
+        <p>Radio Button</p>
+        <!-- Con el mismo nombre solo se selecciona uno-->
+        <label for="">PHP</label>
+        <input type="radio" id="php" name="Lenguaje" value="PHP">
+        <label for="">Java</label>
+        <input type="radio" id="java" name="Lenguaje" value="Java">
+        <label for="">Python</label>
+        <input type="radio" id="python" name="Lenguaje" value="Python">
+
+        <p>check box</p>
+        <!-- permite elegir varias opciones  -->
+        <label for="">mañana</label>
+        <input type="checkbox">
+        <label for="">tarde</label>
+        <input type="checkbox">
+        <label for="">noche</label>
+        <input type="checkbox">
+        <input type="submit">
+
+    </form>
+
+    
+</body>
+</html>
