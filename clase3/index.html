@@ -14,7 +14,7 @@
         <!-- label deja poner el campo de datos // el input standar es de entrada de texto-->
         <label for="">Nombre:</label>
         <!-- placehoder texto predictivo-->
-        <!-- metodo de captura de los datos // required es necesario no puede estar vacio// max-minlength largo y minimo de letra // patern define un patron-->
+        <!-- metodo de captura de los datos // required es necesario no puede estar vacio// max-minlength largo y minimo de letra // patern define un patron // disable desabilita el envio de datos-->
         <input type="nombre" id="nombre" placeholder="Escriba aqui" required maxlength="15" minlength="2">
         <br>
         <label for="">Contraseña</label>
@@ -47,8 +47,23 @@
         <input type="checkbox">
         <label for="">noche</label>
         <input type="checkbox">
-        <input type="submit">
+        
+        <p>Select</p>
+        <!-- permite elejir los parametros ya definidos desde un punto pt group agrupa los valores-->
+        
+        <select name="" id="">
+            <!-- Selected permite cual es el defoult value los nombres de la base de datos se utiliza framework para poder anidar los select de cada opcion-->
+            <option value="1">Buenos Aires</option>
+            <option value="2">Entre Rios</option>
+            <option value="3" selected>Formosa</option>
+        </select> 
 
+        <label for="">Comentarios</label>
+        <!-- tamaño y columnas del taxarea -->
+        <textarea name="" id="" rows="4" cols="50"></textarea>
+        
+        <!-- <input type="submit"> -->
+        <button type="submit">enviar</button>
     </form>
 
     

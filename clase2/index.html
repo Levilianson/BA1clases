@@ -18,8 +18,8 @@
             <article>
                 <p>Lista desordenada </p>
                 <ul><!-- UNSORTED LIST -->
-                    <!-- list item -->
-                    <li> Clientes </li>
+                    <!-- list item  "#referencia" indica que es en la misma pagina-->
+                    <li><a href="#cliente"> Clientes </a></li>
                     <li> Productos </li>
                     <li> Ofertas </li>
                 </ul>
@@ -69,8 +69,18 @@
                 <a href="https://locademia.racingclub.com.ar/">link de locademia</a> 
             </article>
         </section>
+        <h2>Clientes</h2>
+        <!-- los backend buscan para precesar un name  -->
+        <p id="cliente" name="cliente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias vel error nihil, adipisci sed quis illum similique temporibus repudiandae perspiciatis ex perferendis doloribus beatae numquam eaque expedita recusandae totam eveniet. Perferendis, eum blanditiis nesciunt optio fuga deserunt? Molestiae aliquid nam suscipit esse illo nihil deleniti illum culpa ratione ducimus!</p>
     </main>
+    <!-- form es un aproximacion al backend, tiene que tener en action es adonde tiene que ir endpoint y el method java necesita que este siempre la etiqueta name -->
+    <form action="" method="">
+    <!-- crea las etiquetas para poder seguir luego en la base de datos -->
+    <label for="nombre">Nombre</label>
+    <input type="" name="" id="nombre">
 
+    <button type="submit">Enviar</button>
+    </form>
     <footer>
         <!-- mucho mas estatico que el resto-->
     </footer>
