@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <h1>Practica after2</h1>
+        <nav>
+            <ul>
+
+                <li><a href="#form">Formulario</a></li>
+                <li><a href="#tabla">Tabla</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form">
+            <h2>Formulario de Contacto</h2>
+            <!-- post no es necesario cuando es publica -->
+            <form action="#" method="POST">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="" required>
+
+                <label for="consulta">Su Consulta:</label>
+                <textarea id="consulta" name="consulta" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="tabla">
+            <h2>Productos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <!-- filas y columnas table head-->
+                        <th>ID</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- por ahora datos fijos pero tienen que ser tomados de otro sitio de forma dinamica-->
+                    <tr>
+                        <!-- table data -->
+                        <td>1</td>
+                        <td>Celular Lg</td>
+                        <td>$2000.00</td>
+                        <td><button>Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <!-- table data -->
+                        <td>2</td>
+                        <td>Celular Moto</td>
+                        <td>$2800.00</td>
+                        <td><button>Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <!-- table data -->
+                        <td>3</td>
+                        <td>Celular Alcatel</td>
+                        <td>$8000.00</td>
+                        <td><button>Agregar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+        <p>Pagina simil proyecto - (c) BA tech 2024</p>
+
+
+    </footer>
+</body>
+
+</html>

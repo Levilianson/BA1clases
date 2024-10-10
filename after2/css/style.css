@@ -1,0 +1,50 @@
+/* Selector Universal es incial de la pagina en este caso la pagina arraca con los margenes superior e inferior en el borde*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/* selector por etiquetas */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gainsboro;
+}
+/* los color a la fuente pueden ser escritos tambien en hexa */
+header{
+    color: #fff;
+    text-align: center;
+}
+/* listas dento de un nav solamente */
+nav ul{
+    list-style: none;
+}
+/* individualizar margen entre si*/
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+/*  */
+nav ul li a{
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+}
+/* la , son agrupadores */
+table, th, td{
+    border: 2px solid red;
+}
+th, td{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background: #339;
+    color: #ffa;
+    position: relative;
+    bottom: 0;
+    width: 90%;
+}
