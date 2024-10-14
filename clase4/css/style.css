@@ -1,0 +1,20 @@
+/* selector de etiqueta */
+h1{
+    color: white;
+    background-color: red;
+}
+/* el important es el que prevalece sobre el resto. */
+p{
+    color: green !important;
+}
+/* selector por id */
+#textoAmarillo{
+    color: yellow;
+}
+/* edito los parametros de la clase */
+.textoAzul{
+    color: blue;
+    font-size: 140%;
+    font-weight: bold;
+}
+/* etiqueta, clase, id, inline, important */
