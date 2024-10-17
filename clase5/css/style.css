@@ -1,0 +1,60 @@
+/* arranca desde cero el margen de los elementos */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    background-color: blue;    
+    width: 800px;
+    height: 200px;     
+    margin: auto;     
+}
+/* texto de google font */
+.londrina-sketch-regular {
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* cambia como funciona un selector de la tipolgia que se modifica segun es
+esos parametros ya definidos */
+
+/* :root{
+    font-size: 30px;
+    
+}
+
+h1{
+    font-size: 2rem;
+    display: inline;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.5rem;
+}
+*/
+/* se necesita tener el alto y ancho para que me tome  */
+/* divide el ancho para ajustarlo margin:auto */
+/*
+div{
+    background-color: blue;    
+    width: 800px;
+    height: 200px;     
+    margin: auto;     
+}*/
+
+/* otra forma de manejar el porcentaje ancho y alto del viewport pantalla*/
+h1{
+    font-size: 5vw;
+}
+h2{
+    font-size: 4vh;
+}
+h3{
+    font-size: 4vw;
+}

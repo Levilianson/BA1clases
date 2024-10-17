@@ -1,0 +1,36 @@
+*{margin: 0;
+padding: 0;
+}
+/* selector descendente solo a esa p la afecta no como abajo*/
+div p{    
+    margin: auto;
+    width: 70%;
+    height: 100px;
+    color: white;
+    background-color: rebeccapurple;
+    font-size: 20px;
+    background: linear-gradient(red, grey);
+}
+
+/* cada uno tiene su propiedad y se escalan en bloque */
+/* div{
+    margin: auto;
+    width: 50%;
+    height: 200px;
+}
+p{
+    color: white;
+    background-color: rebeccapurple;
+    font-size: 22px;
+} */
+/* div con clase en ves de solo hay que agrupar a todo lo de adentro es muy especifico */
+.estilo-div p{
+    margin: auto;
+    width: 70%;
+    height: 100px;
+    background-color: brown;
+    font-size: 15px;
+    background: brown;
+}
+
+
