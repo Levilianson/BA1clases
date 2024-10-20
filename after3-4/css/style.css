@@ -1,15 +1,16 @@
 *{margin: 0;
 padding: 0;
 }
-/* selector descendente solo a esa p la afecta no como abajo*/
+/* selector descendente solo a esa p la afecta no como abajo degradado de los colores lineal o de derecha a izquierzd, radius borde redondeado*/
 div p{    
     margin: auto;
-    width: 70%;
-    height: 100px;
+    width: 80%;
+    height: 200px;
     color: white;
     background-color: rebeccapurple;
     font-size: 20px;
-    background: linear-gradient(red, grey);
+    background: linear-gradient(to right, red, grey);
+    border-radius: 10%;
 }
 
 /* cada uno tiene su propiedad y se escalan en bloque */
@@ -23,14 +24,28 @@ p{
     background-color: rebeccapurple;
     font-size: 22px;
 } */
-/* div con clase en ves de solo hay que agrupar a todo lo de adentro es muy especifico */
+/* div con clase en ves de solo hay que agrupar a todo lo de adentro es muy especifico 
+tambien se puede el circle borde por parte*/
 .estilo-div p{
     margin: auto;
-    width: 70%;
+    width: 85%;
     height: 100px;
     background-color: brown;
     font-size: 15px;
-    background: brown;
+    background: linear-gradient(blue, rgb(112, 80, 80));
+    background: radial-gradient(circle, rgb(19, 75, 186),rgb(155, 65, 65));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 0;
+    /* es lo mismo que lo de arriba 
+    border-radius: 0 40px 0 40px;*/
 }
 
+.google-font {
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+} 
 
