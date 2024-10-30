@@ -1,0 +1,65 @@
+/* a varios donde se aplican los selectore de etiquetas o agrupamientos incluidos con ide */
+/* div, .textosAzules, #textos{
+    color: blue;
+} */
+
+/* selector de hijo directo o sea a todas las p que sean hijo de un div*/
+/* div>p{
+    color: blueviolet;
+} */
+
+/* Selector adyacente es con el + */
+/* div+p{
+    color: aquamarine;
+} */
+
+/* selector  que sean hermanas de un div al mismo nivel*/
+/* div~p{
+    color: brown;
+} */
+
+/* selector ascendente las que vienen despues de*/
+/* div p{
+    color: goldenrod;
+} */
+/* selectores modelo de caja */
+/* margin solo es para todo el contorno 
+si quiero que todas tengan un tamaño original sin importar los diseños boxsizing border box el tamaño
+box-sizing: content-box; */
+
+/* *{
+    margin: 0;
+    box-sizing: border-box;
+}     */
+#caja1{
+    /* margin-top: 30px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    margin-left: 60px; 
+    lo de abajo es lo mismo*/
+    margin: 30px 25px 50px 60px;
+}
+#caja2{
+    padding: 10px;
+    margin: auto;
+}
+#caja3{
+    border:dotted blue 5px;
+
+}
+#caja1,#caja2,#caja3,#caja4{
+    width: 300px;
+    height: 70px;
+    background-color: rgb(0, 255, 38);
+}
+/* flexbox */
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    color:blueviolet;
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+}

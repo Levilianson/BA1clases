@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .item{
+        background-color: rgb(138, 69, 206);
+        width: 100px;
+        height: 100px;
+        border: 1px dotted black;
+
+    }
+    .grid-container{
+        width: 1200px;
+        height: 200px;
+        /* grid-template-columns: 100px 300px 400px 400px; tambien por porcentaje*/
+        grid-template-columns: repeat(4,auto);
+        display: grid;
+        background-color: aliceblue;
+        height: 200px;
+
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="item"><p>uno</p></div>
+        <div class="item"><p>dos</p></div>
+        <div class="item"><p>tres</p></div>
+        <div class="item"><p>cuatro</p></div>
+    </div>
+    
+</body>
+</html>
