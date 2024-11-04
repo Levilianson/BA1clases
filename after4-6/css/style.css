@@ -1,0 +1,47 @@
+/* creo la variable primary */
+:root{
+    --primary-color:green;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* se puede agregar mas datos de flexbox dentro de otro */
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+/* los margenes se pueden utilizar por separado en cada elemento o en general */
+header{
+    background-color: blueviolet;
+    color: aqua;
+    text-align: center;
+    /* padding: 10px 0 10px 0; */
+    padding: 10px 0;
+}
+
+nav{
+    background-color: #333;
+}
+
+nav ul{
+    list-style: none;    
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li{
+    margin: 0 20px;    
+}
+
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+}
+/* utilizo la propiedad que tengo en el root */
+footer{
+    background-color: var(--primary-color);
+}

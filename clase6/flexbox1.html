@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>  <!-- solo para esta hoja se aplica en esta pagina y tambien en las etiquetas la ultima se aplica -->
+<style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        /* flex-direction: row-reverse;
+        flex-direction: column; */
+        justify-content: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        height: 200px;
+        background-color: aquamarine;
+        align-items: center;
+        align-items: end;
+    } 
+    .cuadra{
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        border: 2px solid salmon;
+    }
+    .dos{
+        background-color: chartreuse;
+        align-self: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="cuadra"><p>uno</p></div>
+        <div class="cuadra dos"><p>dos</p></div>
+        <div class="cuadra"><p>tres</p></div>
+        <div class="cuadra"><p>cuatro</p></div>
+        <div class="cuadra"><p>cinco</p></div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="cuadra"><p>uno</p></div>
+        <div class="cuadra"><p>dos</p></div>
+        <div class="cuadra"><p>tres</p></div>        
+    </div>
+</body>
+</html>
