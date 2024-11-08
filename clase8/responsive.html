@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- para representar en distintos dispositivos -->
+<style>
+    .caja{
+        background-color: greenyellow;
+        border-radius: 10px;
+        padding: 10px;
+        transition: all 0.3s;
+    }
+    .responsive-img{
+        display: none;
+    }
+    /* Media Query se puede estipular entra dos parametros */
+    @media (min-width:576px) and (max-width:1000px){
+        .caja{
+        background-color: rgb(19, 184, 234);        
+        padding: 20px;
+        
+        }
+        .responsive-img{
+        display: block;
+        }
+    }
+    @media (min-width:1001px) and (max-width:1200px){
+        h1{
+            color: blueviolet;
+        }
+    }
+</style>
+<body>
+    <h1>Ejemplo Media Query</h1>
+    <div class="container">
+        <div class="caja">
+            <img src="https://picsum.photos/200/300?grayscale" alt="" class="responsive-img">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero excepturi dolorem error quam est facere. Dolorum neque amet ab voluptatibus!</p>
+        </div>
+    </div>
+</body>
+</html>
