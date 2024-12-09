@@ -25,17 +25,17 @@
 
         var numero=prompt("ingrese edad: ");
         //para convertir a un valor
-        //console.log(typeof numero);
-        //numero=Number(numero);
-        //console.log(typeof numero);
-        //numero=parseInt(numero);
-        //console.log(typeof numero);
-        console.log('hay, ${numero}');
+        console.log(typeof numero);
+        numero=Number(numero);
+        console.log(typeof numero);
+        numero=parseInt(numero);
+        console.log(typeof numero);
+        console.log(`hay, ${numero}`);
         if(numero>=18){
-            console.log('Hola, ${numero} . mayor' );
+            console.log(`hola,${mascota} tu edad es: ${numero} y sos mayor`);
         }
         else{
-            console.log("sos menor");
+            console.log(`hola,${mascota} tu edad es: ${numero} y sos menor`);
         }
     </script>
 </body>
