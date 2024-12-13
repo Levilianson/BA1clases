@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo"> NOmbre 1</h1>
+
+    <h2 class="titulo2">nombre 2</h2>
+
+    <h3 name="titulo3"> nombre 3</h3>
+
+    <h4>Nombre 4</h4>
+
+
+    <button onclick="cambiarTitulos();">Cambiar estilos</button>
+    <script>
+        // var titulo1=document.getElementById("titulo").innerHTML;
+        // console.log(titulo1);
+        // //hay que colocar el objeto que posee 
+        // var titulo2=document.getElementsByClassName("titulo2")[0].innerHTML
+        // console.log(titulo2); 
+
+        // var titulo3=document.getElementsByName("titulo3")[0].innerHTML
+        // console.log(titulo3);
+
+        // var titulo4=document.getElementsByTagName("h4")[0].innerHTML;
+        // console.log(titulo4);
+
+        function cambiarTitulos(){
+            const titulo=document.getElementById("titulo");
+            titulo.innerHTML="ESto cambio.."
+        }
+    </script>
+</body>
+</html>
