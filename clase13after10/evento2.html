@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="menu">
+        <option value="Fiat">Fiat</option>
+        <option value="Ford">Ford</option>
+        <option value="Nisan">Nisan</option>        
+    </select>
+    <p id="seleccion"></p>
+
+    <script>
+        var menu=document.getElementById("menu");
+        var seleccion= document.getElementById("seleccion");
+
+        menu.addEventListener("change",()=>{
+            seleccion.textContent=`Su eleccion es: ${menu.value}`;
+
+        });
+    </script>
+</body>
+</html>

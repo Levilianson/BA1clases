@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="boton1">TOCAR</button>
+    <p id="mensaje"></p>
+
+    <h1 id="titulo">Evento JS</h1>
+
+    <Script>
+        
+        var boton1= document.getElementById("boton1");
+        var mensaje=document.getElementById("mensaje");
+
+        boton1.addEventListener("click",()=>{
+            mensaje.textContent="eventoClick";
+        });
+
+        var titulo= document.getElementById("titulo");
+
+        titulo.addEventListener("mouseover",()=>{
+            titulo.style.color="blue";
+        });
+        titulo.addEventListener("mouseout",()=>{
+            titulo.style.color="red";
+        });
+    </Script>
+</body>
+</html>
