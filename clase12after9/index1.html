@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo"> el titulo 1</h1>
+
+    <p class="texto"> parrafo 1</p>
+    
+    <p class="texto"> parrafo 2</p>
+    
+    <p class="texto"> parrafo 3</p>
+
+    <!-- eventos de los btn -->
+    <button onclick="cambiarTitulo()">Cambiar titulo</button>
+
+    <button onclick="cambiarParrafo()">Cambiar parrafo</button>
+
+    <script>
+        // campturo la o las clases ."nombreDeClase" selector solo un elemento
+        function cambiarTitulo(){
+            var titulo = document.querySelector('.titulo');
+            titulo.innerText='Texto cambiado por JS';
+            titulo.style.color='blue',
+            titulo.style.fontSize='32px';
+        }
+
+        function cambiarParrafo(){
+            // 'etiqueta' #id
+            var parrafos = document.querySelectorAll('.texto');
+
+            parrafos.forEach((parrafo,index) =>{
+                parrafo.innerText=`Parrafo ${index+1} quuerySelectorAll`;
+                parrafo.style.color='blue',
+                parrafo.style.fontSize='32px';
+            });
+        }
+    </script>
+</body>
+</html>
