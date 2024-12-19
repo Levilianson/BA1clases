@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Los datos ingresados son:</h1>
+        <p id="datos"></p>
+
+        <button id="volver">Volver al formulario</button>
+
+
+        <script>
+            //recupero la info del localStore
+            var nombre=localStorage.getItem("nombre");
+            var apellido=localStorage.getItem("apellido");
+            var edad=localStorage.getItem("edad");
+            var datosP=document.getElementById("datos");
+
+
+            if(nombre && apellido && edad)
+            {
+                datosP.textContent=`Nombre: ${nombre},Apellido:${apellido},Edad:${edad}`;
+            }
+            else
+            {
+                datosP.textContent="No hay datos";
+            }
+
+            document.getElementById("volver").addEventListener("click",function()
+            {
+                window.location.href("formulario.html");
+            });
+
+
+        </script>    
+    </body>
+</html>
