@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () =>
     const skip = (page - 1) * limit;
 
     fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
-      .then((response) => response.json())
+      .then((response) => response.json()) // DATOS Y ENCABEZADOS
+      
       .then((data) => {
         totalProductos = data.total;
         const productos = data.products;
@@ -71,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () =>
   function agregarAlCartito(product) 
   {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    //SINO PUEDE MOSTRAR EL CART ENTREGUE UN ELEMENTO VACIO
     cart.push(product);
     localStorage.setItem("cart", JSON.stringify(cart));
     alert(`${product.title} ha sido agregado al carrito!`);
